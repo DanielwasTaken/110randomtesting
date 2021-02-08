@@ -22,18 +22,21 @@ function showNav() {
 function changeNumPomo(x) {
     
     if (x.id == "two-pomo-option") {
+        document.cookie = "2";
         thirdPomo.style.visibility = "hidden";
         fourthPomo.style.visibility = "hidden";
-
+        
         threePomoOption.style.backgroundColor = "white";
         fourPomoOption.style.backgroundColor = "white";
     } else if (x.id == "three-pomo-option") {
+        document.cookie = "3";
         thirdPomo.style.visibility = "visible";
         fourthPomo.style.visibility = "hidden";
-
+        
         twoPomoOption.style.backgroundColor = "white";
         fourPomoOption.style.backgroundColor = "white";
     } else {
+        document.cookie = "4";
         thirdPomo.style.visibility = "visible";
         fourthPomo.style.visibility = "visible";
 
@@ -67,6 +70,9 @@ var x = document.getElementById("break");
 var timer;
 var pomoVal = 25*60;
 var count = 0;
+var cookievar = document.cookie;
+changeNumPomo(parseInt(cookievar,10));
+
 
 function startTimer(seconds, increment) {
     console.log("timer started");
