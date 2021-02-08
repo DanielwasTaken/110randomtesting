@@ -22,21 +22,21 @@ function showNav() {
 function changeNumPomo(x) {
     
     if (x.id == "two-pomo-option") {
-        document.cookie = "pomocount=2";
+        document.cookie = "2";
         thirdPomo.style.visibility = "hidden";
         fourthPomo.style.visibility = "hidden";
         
         threePomoOption.style.backgroundColor = "white";
         fourPomoOption.style.backgroundColor = "white";
     } else if (x.id == "three-pomo-option") {
-        document.cookie = "pomocount=3";
+        document.cookie = "3";
         thirdPomo.style.visibility = "visible";
         fourthPomo.style.visibility = "hidden";
         
         twoPomoOption.style.backgroundColor = "white";
         fourPomoOption.style.backgroundColor = "white";
     } else {
-        document.cookie = "pomocount=4";
+        document.cookie = "4";
         thirdPomo.style.visibility = "visible";
         fourthPomo.style.visibility = "visible";
 
