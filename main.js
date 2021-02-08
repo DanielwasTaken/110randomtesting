@@ -3,7 +3,6 @@ var firstPomo = document.getElementById("first-pomo");
 var secondPomo = document.getElementById("second-pomo")
 var thirdPomo = document.getElementById("third-pomo");
 var fourthPomo = document.getElementById("fourth-pomo");
-
 var rectangle = document.getElementsByClassName("rectangle");
 
 var twoPomoOption = document.getElementById("two-pomo-option");
