@@ -70,8 +70,7 @@ var x = document.getElementById("break");
 var timer;
 var pomoVal = 25*60;
 var count = 0;
-var cookievar = document.cookie;
-changeNumPomo(parseInt(cookievar,10));
+
 
 
 function startTimer(seconds, increment) {
