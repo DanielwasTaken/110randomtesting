@@ -1,5 +1,4 @@
 var navBar = document.getElementById("navBar");
-
 var firstPomo = document.getElementById("first-pomo");
 var secondPomo = document.getElementById("second-pomo")
 var thirdPomo = document.getElementById("third-pomo");
