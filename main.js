@@ -164,3 +164,8 @@ function toggleEnd() {
         document.getElementById("end").style.display = "none";
     }
 }
+
+alert("failure");
+var cookievar = document.cookie;
+alert(cookievar);
+changeNumPomo(parseInt(cookievar,10));
