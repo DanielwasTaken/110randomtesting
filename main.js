@@ -166,5 +166,6 @@ function toggleEnd() {
 }
 
 var cookievar = parseInt(cookievar,10);
+alert("change went through");
 alert(cookievar);
 changeNumPomo(cookievar);
