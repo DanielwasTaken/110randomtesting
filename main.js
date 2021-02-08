@@ -167,4 +167,12 @@ function toggleEnd() {
 
 var cookievar = parseInt(document.cookie,10);
 alert(cookievar);
-changeNumPomo(cookievar);
+if(cookievar == 2){
+    changeNumPomo(twoPomoOption);
+}
+else if(cookievar == 3){
+    changeNumPomo(threePomoOption);
+}
+else{
+    changeNumPomo(fourPomoOption);
+}
