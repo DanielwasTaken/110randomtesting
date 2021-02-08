@@ -165,7 +165,6 @@ function toggleEnd() {
     }
 }
 
-alert("failure");
-var cookievar = document.cookie;
+var cookievar = parseInt(cookievar,10);
 alert(cookievar);
-changeNumPomo(parseInt(cookievar,10));
+changeNumPomo(cookievar);
