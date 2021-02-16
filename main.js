@@ -168,9 +168,11 @@ function toggleEnd() {
 
 
 //need to get cookie and parse string to find correct value
-var numPomos = localStorage.getItem("pomoCount");
+
 
 window.addEventListener("DOMContentLoaded",()=>{
+let numPomos = localStorage.getItem("pomoCount");
+alert(numPomos);
 if(numPomos == 2){
     changeNumPomo(twoPomoOption);
 }
