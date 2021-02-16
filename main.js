@@ -41,7 +41,6 @@ function changeNumPomo(x) {
         twoPomoOption.style.backgroundColor = "white";
         threePomoOption.style.backgroundColor = "white";
     }
-    alert(document.cookie);
     x.style.backgroundColor = "orange";
 }
 
