@@ -167,7 +167,7 @@ function toggleEnd() {
 
 
 
-window.addEventListener('DOMContentLoaded', () => {
+
 //need to get cookie and parse string to find correct value
 var numPomos = localStorage.getItem("pomoCount");
 
@@ -181,4 +181,4 @@ else if(numPomos == 3){
 else{
     changeNumPomo(fourPomoOption);
 }
-});
+
