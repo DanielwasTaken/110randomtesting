@@ -27,7 +27,7 @@ function changeNumPomo(x) {
         threePomoOption.style.backgroundColor = "white";
         fourPomoOption.style.backgroundColor = "white";
     } else if (x.id == "three-pomo-option") {
-        localStorage.setItem("pomoCount", "three-pomo-option");
+        localStorage.setItem("pomoCount", 3);
         thirdPomo.style.visibility = "visible";
         fourthPomo.style.visibility = "hidden";
         
