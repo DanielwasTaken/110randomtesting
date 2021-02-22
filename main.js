@@ -178,7 +178,7 @@ function endTimer() {
     innerCircle.style.cursor = 'pointer'
 
     //another if else to deal with updated central button 
-    if(pomoOrBreak == "pomo"){
+    if(pomoOrBreak == "break"){
         document.getElementById('title').innerHTML = 'Ready to Start Break?';
         document.getElementById('time').innerHTML = 'Break';
     }
