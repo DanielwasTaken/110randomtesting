@@ -62,7 +62,7 @@ function startTimerVisual(id) {
         }
 
         document.getElementById('break').style.display = 'none'
-        document.getElementById('end').style.display = 'block'
+        //document.getElementById('end').style.display = 'block'
         checkTimerStart = true
     }
 }
