@@ -110,6 +110,7 @@ function startTimer(seconds, increment) {
             endTimer()
 
             if (increment) {
+                //break can effectively be deleted if the issue I'm working on is correct
                 //document.getElementById('break').style.display = 'block'
                 document.getElementById('end').style.display = 'none'
             } else {
