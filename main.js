@@ -169,6 +169,7 @@ function updatePomo() {
 }
 
 function endTimer() {
+    console.log("timer ending, pomoOrBreak = "+pomoOrBreak);
     clearInterval(timer)
     checkTimerStart = false
 
