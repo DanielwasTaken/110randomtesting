@@ -40,6 +40,7 @@ var checkTimerStart = false
 var pomoOrBreak = "pomo";
 
 function startTimerVisual(id) {
+    console.log(pomoOrBreak);
     if (!checkTimerStart) {
         innerCircle.style.backgroundColor = 'var(--main-bg-color)';
         innerCircle.style.cursor = 'auto'
