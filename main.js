@@ -60,7 +60,7 @@ function startTimerVisual(id) {
 
             document.getElementById('end').innerHTML = 'Stop'
             document.getElementById('title').innerHTML = 'Relax'
-            pomoOrBreak = "pomo"l
+            pomoOrBreak = "pomo";
         }
 
         document.getElementById('break').style.display = 'none'
