@@ -62,7 +62,7 @@ function startTimerVisual(id) {
         }
 
         document.getElementById('break').style.display = 'none'
-        //document.getElementById('end').style.display = 'block'
+        document.getElementById('end').style.display = 'block'
         checkTimerStart = true
     }
 }
@@ -108,7 +108,7 @@ function startTimer(seconds, increment) {
             endTimer()
 
             if (increment) {
-                document.getElementById('break').style.display = 'block'
+                //document.getElementById('break').style.display = 'block'
                 document.getElementById('end').style.display = 'none'
             } else {
                 document.getElementById('break').style.display = 'none'
