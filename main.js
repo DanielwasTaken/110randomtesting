@@ -36,16 +36,20 @@ function showNav() {
 var innerCircle = document.getElementById('innerCircle')
 var checkTimerStart = false
 
+//this is a bit of a garbage solution but I'm creating a variable to check if starting pomo or break since the current check with id won't quite fit
+var pomoOrBreak = "pomo";
+
 function startTimerVisual(id) {
     if (!checkTimerStart) {
         innerCircle.style.backgroundColor = 'var(--main-bg-color)';
         innerCircle.style.cursor = 'auto'
 
-        if (id == 'innerCircle') {
+        //originally was based on id, changed to this since we want the center button to both start pomos and breaks
+        if(pomoOrBreak == "pomo"){
             startTimer(workTime * 60, true)
-
             document.getElementById('end').innerHTML = 'Skip'
             document.getElementById('title').innerHTML = 'Focus'
+            
         } else {
             if (count == 4) {
                 startTimer(longBreakTime * 60, false)
@@ -170,9 +174,17 @@ function endTimer() {
     innerCircle.style.backgroundColor = 'var(--main-bg-color)'
     innerCircle.style.cursor = 'pointer'
 
-    document.getElementById('title').innerHTML = 'Ready to Work?'
-
-    document.getElementById('time').innerHTML = 'Start'
+    //another if else to deal with updated central button 
+    if(pomoOrBreak == "pomo"){
+        document.getElementById('title').innerHTML = 'Ready to Start Break?';
+        document.getElementById('time').innerHTML = 'Break';
+        pomoOrBreak == "break";
+    }
+    else{
+        document.getElementById('title').innerHTML = 'Ready to Work?'
+        document.getElementById('time').innerHTML = 'Start'
+        pomoOrBreak == "pomo";
+    }
 }
 
 function toggleBreak() {
