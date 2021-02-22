@@ -50,7 +50,7 @@ function startTimerVisual(id) {
             startTimer(workTime * 60, true)
             document.getElementById('end').innerHTML = 'Skip'
             document.getElementById('title').innerHTML = 'Focus'
-            
+            pomoOrBreak = "break";
         } else {
             if (count == 4) {
                 startTimer(longBreakTime * 60, false)
@@ -60,6 +60,7 @@ function startTimerVisual(id) {
 
             document.getElementById('end').innerHTML = 'Stop'
             document.getElementById('title').innerHTML = 'Relax'
+            pomoOrBreak = "pomo"l
         }
 
         document.getElementById('break').style.display = 'none'
@@ -180,12 +181,10 @@ function endTimer() {
     if(pomoOrBreak == "pomo"){
         document.getElementById('title').innerHTML = 'Ready to Start Break?';
         document.getElementById('time').innerHTML = 'Break';
-        pomoOrBreak == "break";
     }
     else{
         document.getElementById('title').innerHTML = 'Ready to Work?'
         document.getElementById('time').innerHTML = 'Start'
-        pomoOrBreak == "pomo";
     }
 }
 
