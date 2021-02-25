@@ -315,10 +315,10 @@ body {
     transform: translate(-50%, -50%);*/
 svg {
   display: block;
-  margin: 0;
+  margin: 50px auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 90%;
+  height: 90%;
 }
 
 #loader 
