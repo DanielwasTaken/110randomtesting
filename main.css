@@ -5,6 +5,7 @@
     --main-heavy-color: #ffb422;
     --main-light-color: #ffd074;
     --fruit-url: url('images/Orange.svg');
+    
 }
 
 .themeBlue {
@@ -200,6 +201,7 @@ body {
     margin: auto;
     /* left: 6%; */
     top: -10%;
+    z-index: 1
 }
 
 #innerCircle {
@@ -215,6 +217,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2
 }
 
 #allPomos {
@@ -279,6 +282,7 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     visibility: hidden;
+    z-index: 3
 }
 
 #time {
