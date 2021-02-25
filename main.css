@@ -196,7 +196,7 @@ body {
     border: 1.3vw solid var(--main-heavy-color);
     /* display: inline-block; */
     visibility: visible;
-    position: absolute;
+    position: relative;
     margin: auto;
     /* left: 6%; */
     top: -10%;
@@ -301,10 +301,24 @@ body {
     visibility: visible;
 }
 
+/*cursor: pointer;
+    height: 90%;
+    width: 90%;
+    background-color: var(--main-light-color);
+    border-radius: 50%;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
 svg {
   display: block;
-  margin: 50px auto;
+  margin: 0;
   position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 #loader 
