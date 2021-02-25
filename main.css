@@ -300,3 +300,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     visibility: visible;
 }
+
+svg {
+  display: block;
+  margin: 50px auto;
+  position: absolute;
+}
+
+#loader 
+{ fill: #ffffff }
+
+#border 
+{ fill: #ffffff }
