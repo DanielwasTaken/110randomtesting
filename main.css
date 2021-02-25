@@ -304,7 +304,7 @@ body {
 svg {
   display: block;
   margin: 50px auto;
-  position: absolute;
+  position: auto;
 }
 
 #loader 
