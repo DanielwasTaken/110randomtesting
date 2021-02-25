@@ -196,7 +196,7 @@ body {
     border: 1.3vw solid var(--main-heavy-color);
     /* display: inline-block; */
     visibility: visible;
-    position: relative;
+    position: absolute;
     margin: auto;
     /* left: 6%; */
     top: -10%;
@@ -304,7 +304,7 @@ body {
 svg {
   display: block;
   margin: 50px auto;
-  position: auto;
+  position: absolute;
 }
 
 #loader 
