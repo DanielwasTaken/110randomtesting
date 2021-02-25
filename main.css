@@ -313,7 +313,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);*/
-svg {
+.svg {
   display: block;
   margin: 50px auto;
   position: absolute;
