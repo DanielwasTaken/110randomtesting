@@ -297,12 +297,13 @@ function changeVolume() {
 }
 
 //
+/*setting t changes the time for the circle to fully draw*/
 var loader = document.getElementById('loader')
   , border = document.getElementById('border')
   , α = 0
   , π = Math.PI
   , t = 10;
-
+/*haven't gotten around to modifying code to correctly start/stop with timer*/
 (function draw() {
   α++;
   α %= 360;
