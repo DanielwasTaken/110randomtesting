@@ -65,7 +65,8 @@ function startTimerVisual(id) {
             document.getElementById('end').innerHTML = 'Skip'
             document.getElementById('title').innerHTML = 'Focus'
 
-            draw()
+            //draw()
+            fruitAnimation = setInterval(draw, t); // Redraw
 
             pomoOrBreak = 'break'
         } else {
@@ -333,11 +334,12 @@ function draw() {
     border.setAttribute( 'd', anim );
 
   
-    fruitAnimation = setInterval(draw, t); // Redraw
+    //fruitAnimation = setTimeout(draw, t); // Redraw
 }
 
 function endFruitAnimation() {
     console.log("drawCount = " + drawCount);
     document.getElementById("animation").style.zIndex = 0
-    clearInterval(fruitAnimation)
+    //clearTimeout(fruitAnimation)
+    clearInterval(fruitAnimation);
 }
