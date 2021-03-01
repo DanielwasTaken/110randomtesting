@@ -61,12 +61,12 @@ function startTimerVisual(id) {
 
         //originally was based on id, changed to this since we want the center button to both start pomos and breaks
         if (pomoOrBreak == 'pomo') {
-            startTimer(workTime * 60, true)
+            startTimer(workTime * 60-1, true)
             document.getElementById('end').innerHTML = 'Skip'
             document.getElementById('title').innerHTML = 'Focus'
 
-            //draw()
-            fruitAnimation = setInterval(draw, t); // Redraw
+            draw()
+            //fruitAnimation = setInterval(draw, t); // Redraw
 
             pomoOrBreak = 'break'
         } else {
@@ -334,7 +334,7 @@ function draw() {
     border.setAttribute( 'd', anim );
 
   
-    //fruitAnimation = setTimeout(draw, t); // Redraw
+    fruitAnimation = setTimeout(draw, t); // Redraw
 }
 
 function endFruitAnimation() {
