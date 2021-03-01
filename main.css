@@ -201,6 +201,7 @@ body {
     margin: auto;
     /* left: 6%; */
     top: -10%;
+    /*messing around with z-index since circle wasn't showing up in front*/
     z-index: 1
 }
 
@@ -217,6 +218,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /*messing around with z-index since circle wasn't showing up in front*/
     z-index: 2
 }
 
@@ -282,6 +284,7 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     visibility: hidden;
+    /*messing around with z-index since circle wasn't showing up in front*/
     z-index: 3
 }
 
@@ -317,6 +320,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);*/
+/*positioning is off so I'm currently trying to figure out if the problem is the css*/
 #animation {
   display: block;
   margin: 50px auto;
