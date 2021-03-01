@@ -333,11 +333,11 @@ function draw() {
     border.setAttribute( 'd', anim );
 
   
-    fruitAnimation = setTimeout(draw, t); // Redraw
+    fruitAnimation = setInterval(draw, t); // Redraw
 }
 
 function endFruitAnimation() {
     console.log("drawCount = " + drawCount);
     document.getElementById("animation").style.zIndex = 0
-    clearTimeout(fruitAnimation)
+    clearInterval(fruitAnimation)
 }
