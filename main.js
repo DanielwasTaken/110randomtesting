@@ -307,7 +307,7 @@ var loader = document.getElementById('loader')
   , border = document.getElementById('border')
   , α = 0
   , π = Math.PI
-  , t = workTime * 60 * 3;
+  , t = workTime * 60 * 1000/360;
 /*haven't gotten around to modifying code to correctly start/stop with timer*/
 function draw() {
   
