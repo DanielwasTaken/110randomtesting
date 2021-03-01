@@ -308,9 +308,11 @@ var loader = document.getElementById('loader')
   , α = 0
   , π = Math.PI
   , t = workTime * 60 * 1000/360;
+console.log("t is "+t);
+var drawCount = 0;
 /*haven't gotten around to modifying code to correctly start/stop with timer*/
 function draw() {
-  
+    drawCount++;
     α++;
     α %= 360;
     var r = ( α * π / 180 )
@@ -335,6 +337,7 @@ function draw() {
 }
 
 function endFruitAnimation() {
+    console.log("drawCount = " + drawCount);
     document.getElementById("animation").style.zIndex = 0
     clearTimeout(fruitAnimation)
 }
