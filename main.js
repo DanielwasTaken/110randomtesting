@@ -91,9 +91,9 @@ function startTimerVisual(id) {
 // Pomodoro Timer
 var timer
 var count = 0
-var workTime = 1
-var breakTime = 2
-var longBreakTime = 3
+var workTime = .5
+var breakTime = 1
+var longBreakTime = 2
 
 var firstPomo = document.getElementById('first-pomo')
 var secondPomo = document.getElementById('second-pomo')
