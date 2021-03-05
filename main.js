@@ -92,7 +92,7 @@ function startTimerVisual(id) {
 // Pomodoro Timer
 var timer
 var count = 0
-var workTime = 0.5
+var workTime = 0.2
 var breakTime = 0.1
 var longBreakTime = 0.3
 
@@ -317,7 +317,6 @@ var loader = document.getElementById('loader')
 function draw() {
     drawCount++;
     let t = workTime * 60 * 1000/360
-    //console.log(t);
     α++;
     α %= 360;
     var r = ( α * π / 180 )
@@ -328,9 +327,7 @@ function draw() {
             + mid + ' 1 ' 
             +  x  + ' ' 
             +  y  + ' z';
-    //[x,y].forEach(function( d ){
-    //  d = Math.round( d * 1e3 ) / 1e3;
-    //});
+
 
     document.getElementById("animation").style.zIndex = 2
     
@@ -354,9 +351,7 @@ function drawReverse(breakType) {
             + mid + ' 1 ' 
             +  x  + ' ' 
             +  y  + ' z';
-    //[x,y].forEach(function( d ){
-    //  d = Math.round( d * 1e3 ) / 1e3;
-    //});
+
 
     document.getElementById("animation").style.zIndex = 2
     
