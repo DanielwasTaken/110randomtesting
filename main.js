@@ -201,6 +201,10 @@ function updatePomo() {
 }
 
 function endTimer() { 
+    while(a%365 != 0){
+        clearTimeout(fruitAnimation);
+        draw();
+    }
     endFruitAnimation()
     clearInterval(timer)
     checkTimerStart = false
