@@ -304,7 +304,8 @@ function changeVolume() {
     }
 }
 
-
+var drawCount = 0;
+var reverseCount = 0;
 /*setting t changes the time for the circle to fully draw*/
 var loader = document.getElementById('loader')
   , border = document.getElementById('border')
@@ -313,6 +314,7 @@ var loader = document.getElementById('loader')
   , αReverse = 0;
 /*haven't gotten around to modifying code to correctly start/stop with timer*/
 function draw() {
+    drawCount++;
     let t = workTime * 60 * 1000/360
     α++;
     α %= 360;
@@ -337,6 +339,7 @@ function draw() {
 }
 
 function drawReverse(breakType) {
+    reverseCount++;
     let t = breakType * 60 * 1000/360
     α++;
     α %= 360;
@@ -363,5 +366,6 @@ function drawReverse(breakType) {
 
 function endFruitAnimation() {
     document.getElementById("animation").style.zIndex = 0
+    console.log("draw count = "+drawCount+" reverse count = "+reverseCount);
     clearTimeout(fruitAnimation)
 }
