@@ -317,8 +317,9 @@ var loader = document.getElementById('loader')
 function draw() {
     drawCount++;
     let t = workTime * 60 * 1000/360
-    console.log(t);
-    α++;
+    //console.log(t);
+    //α++;
+    a+=2;
     α %= 360;
     var r = ( α * π / 180 )
         , x = Math.sin( r ) * 125
@@ -337,13 +338,13 @@ function draw() {
     loader.setAttribute( 'd', anim );
     border.setAttribute( 'd', anim );
 
-    fruitAnimation = setTimeout(draw, t); // Redraw
+    fruitAnimation = setTimeout(draw, 2*t); // Redraw
 }
 
 function drawReverse(breakType) {
     reverseCount++;
     let t = breakType * 60 * 1000/360
-    console.log(t);
+    //console.log(t);
     α++;
     α %= 360;
     αReverse = 360 - α
