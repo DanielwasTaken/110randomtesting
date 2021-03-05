@@ -54,7 +54,6 @@ var checkTimerStart = false
 var pomoOrBreak = 'pomo'
 
 function startTimerVisual(id) {
-    console.log(pomoOrBreak)
     if (!checkTimerStart) {
         innerCircle.style.backgroundColor = 'var(--main-bg-color)'
         innerCircle.style.cursor = 'auto'
@@ -201,9 +200,7 @@ function updatePomo() {
     }
 }
 
-function endTimer() {
-    console.log('timer ending, pomoOrBreak = ' + pomoOrBreak)
-    
+function endTimer() { 
     endFruitAnimation()
     clearInterval(timer)
     checkTimerStart = false
@@ -318,6 +315,8 @@ function draw() {
     drawCount++;
     let t = workTime * 60 * 1000/360
     console.log(t);
+    console.log("bleh");
+    console.log("this shouldn't affect anything");
     α++;
     α %= 360;
     var r = ( α * π / 180 )
