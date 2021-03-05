@@ -314,9 +314,6 @@ var loader = document.getElementById('loader')
 function draw() {
     drawCount++;
     let t = workTime * 60 * 1000/360
-    console.log(t);
-    console.log("bleh");
-    console.log("this shouldn't affect anything");
     α++;
     α %= 360;
     var r = ( α * π / 180 )
