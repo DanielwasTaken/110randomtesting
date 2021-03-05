@@ -127,6 +127,7 @@ function startTimer(seconds, increment) {
     }
 
     timer = setInterval(function () {
+        numCalls++;
         if (time <= 0) {
             if (increment) {
                 count++
@@ -303,7 +304,7 @@ function changeVolume() {
         volumeImage.src = './images/volume-level-3.svg'
     }
 }
-
+var numCalls = 0;
 var drawCount = 0;
 var reverseCount = 0;
 /*setting t changes the time for the circle to fully draw*/
@@ -366,6 +367,6 @@ function drawReverse(breakType) {
 
 function endFruitAnimation() {
     document.getElementById("animation").style.zIndex = 0
-    console.log("draw count = "+drawCount+" reverse count = "+reverseCount);
+    console.log("draw count = "+drawCount+" reverse count = "+reverseCount+" numCalls = "+numCalls);
     clearTimeout(fruitAnimation)
 }
