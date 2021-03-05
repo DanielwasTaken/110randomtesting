@@ -201,8 +201,7 @@ function updatePomo() {
 }
 
 function endTimer() { 
-    while(a%365 != 0){
-        console.log(a);
+    while(α%365 != 0){
         clearTimeout(fruitAnimation);
         draw();
     }
