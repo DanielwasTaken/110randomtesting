@@ -92,7 +92,7 @@ function startTimerVisual(id) {
 // Pomodoro Timer
 var timer
 var count = 0
-var workTime = 0.2
+var workTime = 0.4
 var breakTime = 0.1
 var longBreakTime = 0.3
 
