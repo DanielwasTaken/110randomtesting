@@ -371,7 +371,7 @@ function draw() {
     loader.setAttribute('d', anim)
     border.setAttribute('d', anim)
 
-    fruitAnimation = setTimeout({draw()}, t-diff) // Redraw
+    fruitAnimation = setTimeout(function(){draw();}, t-diff) // Redraw
 }
 
 function drawReverse(breakTime) {
@@ -393,7 +393,7 @@ function drawReverse(breakTime) {
     loader.setAttribute('d', anim)
     border.setAttribute('d', anim)
 
-    fruitAnimation = setTimeout({drawReverse()}, t-diff, breakTime) // Redraw
+    fruitAnimation = setTimeout(function(){drawReverse();}, t-diff, breakTime) // Redraw
 }
 
 function endFruitAnimation() {
