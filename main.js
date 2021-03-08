@@ -392,7 +392,7 @@ function drawReverse(breakTime) {
 
     loader.setAttribute('d', anim)
     border.setAttribute('d', anim)
-
+    console.log("t = " +t+ " diff = "+diff+ "delay = "+(t-diff));
     fruitAnimation = setTimeout(function(){drawReverse(breakTime);}, t-diff, breakTime) // Redraw
 }
 
