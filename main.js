@@ -347,7 +347,11 @@ const π = Math.PI
 let α = 0
 let αReverse = 0
 
+var drawCount = 0;
+var reverseCount = 0;
+
 function draw() {
+    drawCount++;
     const t = (workTime() * 60 * 1000) / 360
     time += t;
     var diff = (new Date().getTime() - start) - time;
@@ -371,6 +375,7 @@ function draw() {
 }
 
 function drawReverse(breakTime) {
+    reverseCount++;
     const t = (breakTime * 60 * 1000) / 360
     time += t;
     var diff = (new Date().getTime() - start) - time;
@@ -392,6 +397,7 @@ function drawReverse(breakTime) {
 }
 
 function endFruitAnimation() {
+    console.log("drawCount = "+drawCount+"reverseCount = "+reverseCount);
     document.getElementById('animation').style.zIndex = 0
     clearTimeout(fruitAnimation)
 }
